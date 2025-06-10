@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resumen de Redes e Internet</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1>ORIGEN Y EVOLUCION DEL INTERNET</h1>
+
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="EstructuraYComponentes.html" class="active">Estructura Y Componentes</a>
+            <a href="ServiciosYAplicaciones.html">Servicios Y Aplicaciones</a>
+            <a href="Seguridad.html">Seguridad</a>
+            <a href="NuevasTecnologias.html">Nuevas Tecnologias Emergentes</a>
+        </nav>
+    </header>
+
+    <br>
+
+    <nav id="menu-secciones">
+        <h2>Menú de Secciones</h2>
+        <ul>
+            <li><a href="#dns">DNS</a></li>
+            <li><a href="#dominio">Dominio</a></li>
+            <li><a href="#http">HTTP</a></li>
+            <li><a href="#www">WWW</a></li>
+            <li><a href="#com">.com</a></li>
+            <li><a href="#pagina-web">Página Web</a></li>
+            <li><a href="#correo-electronico">Correo Electrónico</a></li>
+            <li><a href="#navegador-web">Navegador Web</a></li>
+            <li><a href="#servidor">Servidor</a></li>
+            <li><a href="#estacion-trabajo">Estacion de Trabajo</a></li>
+            <li><a href="#tarjeta-red">Tarjeta de Red</a></li>
+            <li><a href="#repetidor">Repetidor</a></li>
+            <li><a href="#puente">Puente</a></li>
+            <li><a href="#hub">HUB</a></li>
+            <li><a href="#switch">Switch</a></li>
+            <li><a href="#router">Router</a></li>
+            <li><a href="#access-point">Access Point</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>
+            El Internet es una red que se compone de ordenadores en todo el mundo. Ofrece a quien lo use
+            infinitas posibilidades, entre ellas acceder a correos, juegos, blogs, entre otros. Para poder
+            ejecutar esto hace uso de un método de funcionamiento llamado <strong>TCP/IP</strong>, que
+            tendrá a cargo poder recibir y mandar información.
+        </p>
+        <p>
+            Este método debe tomar en cuenta una serie de normas, las cuales debe cumplir para que sea posible
+            el intercambio de información entre los ordenadores.
+        </p>
+        <p>
+            Por medio de la <strong>IP</strong> se va a identificar al ordenador para que este pueda comunicarse
+            con dos operadores, de esta forma estos se conectan entre ellos con sus direcciones IP respectivas.
+            Para los seres humanos es complicado recordar los IPs, por lo que resulta más factible memorizar
+            nombres de dominios. La traducción se hace internamente, por medio de los servidores DNS.
+        </p>
+
+        <ul>
+            <li id="dns">
+                <strong>DNS</strong>
+                <p>
+                    El DNS significa en castellano <strong>sistema de nombre de dominio</strong>. Su función
+                    principal será traducir o resolver aquellos nombres inteligibles para los usuarios en
+                    identificadores binarios relacionados con los aparatos conectados a la red.
+                </p>
+                <p>
+                    Sin el DNS, quien use Internet tendría que entrar a una página web usando la dirección IP,
+                    como <code>http://214.87.34.234</code> en lugar de <code>http://undominio.com</code>.
+                </p>
+            </li>
+
+            <li id="dominio">
+                <strong>Dominio</strong>
+                <p>
+                    El dominio de Internet es el nombre que se le da a una dirección de computadora conectada
+                    a la red. Es más fácil de recordar que una IP. Gracias a él y a los DNS, se pueden traducir
+                    las direcciones IP.
+                </p>
+                <p>
+                    El dominio permite trasladar un servicio de red entre ubicaciones sin cambiar la IP. Las
+                    IP pueden ser <strong>dinámicas</strong> (cambian con frecuencia) o <strong>estáticas</strong>
+                    (fijas), necesarias para servidores web, DNS, FTP, etc.
+                </p>
+            </li>
+
+            <li id="http">
+                <strong>HTTP</strong>
+                <p>
+                    Significa <strong>HyperText Transfer Protocol</strong>. Es el protocolo que se utiliza para
+                    las transacciones en la web. El hipertexto es el contenido y el protocolo de transferencia
+                    es el sistema que envía peticiones y recibe respuestas.
+                </p>
+                <p>
+                    También permite enviar datos en ambos sentidos, por ejemplo, mediante formularios.
+                </p>
+            </li>
+
+            <li id="www">
+                <strong>WWW</strong>
+                <p>
+                    Las tres W hacen referencia a <strong>World Wide Web</strong>. Es el sistema de navegación
+                    encargado de extraer la información de las páginas web.
+                </p>
+                <p>
+                    "Una web" se refiere a un sitio específico; "la web" a toda la red interconectada.
+                </p>
+            </li>
+
+            <li id="com">
+                <strong>.com</strong>
+                <p>
+                    Es un dominio genérico de Internet. Surgió en 1985 y lo administra VeriSign. Es uno de los
+                    más usados, especialmente por negocios en línea.
+                </p>
+            </li>
+
+            <li id="pagina-web">
+                <strong>Página web</strong>
+                <p>
+                    Una página web contiene texto, imágenes, aplicaciones y otros contenidos accesibles desde
+                    un navegador web.
+                </p>
+            </li>
+
+            <li id="correo-electronico">
+                <strong>Correo electrónico</strong>
+                <p>
+                    También llamado <strong>email</strong>, es un servicio para enviar y recibir mensajes de
+                    forma segura y rápida por medio de un canal electrónico.
+                </p>
+                <p>
+                    Permite la comunicación entre dos o más personas mediante dispositivos o computadoras.
+                </p>
+            </li>
+
+            <li id="navegador-web">
+                <strong>Navegador web</strong>
+                <p>
+                    Es un programa que permite a los usuarios acceder a la información de páginas web. Interpreta
+                    el código HTML y lo muestra en pantalla de forma entendible.
+                </p>
+            </li>
+        </ul>
+
+        <section>
+            <p>
+                Conocer cuáles son los componentes de red te resultará de utilidad para identificar posibles problemas
+                de
+                conexión y descubrir soluciones para optimizar el funcionamiento de las redes, asegurando que cumplan su
+                propósito de forma adecuada. A continuación, se describen los principales componentes de redes.
+            </p>
+        </section>
+
+        <section id="servidor">
+            <h2>El servidor</h2>
+            <p>
+                Es una computadora o aplicación encargada de proporcionar servicios a otros equipos denominados
+                clientes.
+                Procesa solicitudes y entrega datos por medio de una red, ya sea local o mediante Internet.
+            </p>
+            <ul>
+                <li>Ejemplos: servidores de correo electrónico y servidores web.</li>
+                <li>Funciona bajo la arquitectura cliente-servidor.</li>
+            </ul>
+        </section>
+
+        <section id="estacion-trabajo">
+            <h2>La estación de trabajo</h2>
+            <p>
+                Se refiere al equipo informático utilizado para tareas profesionales, técnicas o científicas. En
+                oficinas,
+                suelen estar conectadas entre sí y a un servidor, así como a periféricos y a Internet.
+            </p>
+            <ul>
+                <li>Facilitan el flujo de información.</li>
+                <li>Hoy en día, no existen grandes diferencias entre estaciones de trabajo y equipos domésticos.</li>
+            </ul>
+        </section>
+
+        <section id="tarjeta-red">
+            <h2>La tarjeta de conexión a la red</h2>
+            <p>
+                Componente generalmente integrado en los equipos, permite la conexión a redes mediante controladores
+                compatibles con protocolos del sistema operativo.
+            </p>
+        </section>
+
+        <section id="repetidor">
+            <h2>El repetidor</h2>
+            <p>
+                Retransmite señales de red débiles, amplificándolas para mejorar su alcance y potencia. Su función
+                depende del tipo de red (cableada o inalámbrica).
+            </p>
+            <ul>
+                <li>Útil en entornos con muchos dispositivos conectados.</li>
+            </ul>
+        </section>
+
+        <section id="puente">
+            <h2>Los bridges o puentes de red</h2>
+            <p>
+                Dispositivos que interconectan segmentos de red, creando una subred sin necesidad de router. Permiten
+                la comunicación entre diferentes equipos mediante conexiones segmentadas.
+            </p>
+        </section>
+
+        <section id="hub">
+            <h2>Los hubs</h2>
+            <p>
+                Dispositivos que conectan múltiples equipos mediante cables, creando un único segmento de red. Funcionan
+                como concentradores, compartiendo información simultáneamente entre todos los puertos conectados.
+            </p>
+            <ul>
+                <li>Conectan distintos dispositivos, independientemente de su tipo.</li>
+            </ul>
+        </section>
+
+        <section id="switch">
+            <h2>El switch</h2>
+            <p>
+                Dispositivo digital que interconecta segmentos de red, similar a los puentes. Permite la creación de
+                redes de área local (LAN) bajo el estándar Ethernet.
+            </p>
+        </section>
+
+        <section id="router">
+            <h2>El router</h2>
+            <p>
+                También denominado “enrutador”, es responsable de dirigir la información por la mejor ruta posible en
+                una red. Su uso más común es compartir una única conexión a Internet entre varios dispositivos.
+            </p>
+            <ul>
+                <li>Recibe y distribuye la conexión de red.</li>
+                <li>Optimiza el tiempo y calidad de entrega de datos.</li>
+            </ul>
+        </section>
+
+        <section id="access-point">
+            <h2>Access Point</h2>
+            <p>
+                Elemento esencial en redes inalámbricas. Recibe la señal del router y extiende su cobertura generando
+                una nueva señal independiente.
+            </p>
+            <ul>
+                <li>Puede configurarse como repetidor o puente.</li>
+                <li>Comúnmente utilizado en redes empresariales.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <button id="footer-menu-toggle" aria-label="Mostrar bibliografía">☰ Bibliografía</button>
+        <nav id="footer-menu" class="hidden">
+            <ul>
+                <li><a href="https://continuemosestudiando.abc.gob.ar/contenido/origen-y-evolucion-de-internet/"
+                        target="_blank" rel="noopener noreferrer">Origen y evolución de Internet - Continuemos
+                        Estudiando</a></li>
+                <li><a href="https://concepto.de/historia-de-internet/" target="_blank"
+                        rel="noopener noreferrer">Historia de Internet - Concepto</a></li>
+                <li><a href="https://www.digitalrecovery.com.co/como-se-estructura-el-internet/" target="_blank"
+                        rel="noopener noreferrer">¿Cómo se estructura el Internet? - Digital Recovery</a></li>
+                <li><a href="https://www.tokioschool.com/noticias/componentes-de-redes/" target="_blank"
+                        rel="noopener noreferrer">Componentes de redes - Tokio School</a></li>
+                <li><a href="https://wol.jw.org/es/wol/d/r4/lp-s/101997522" target="_blank"
+                        rel="noopener noreferrer">Historia del Internet - JW.org</a></li>
+                <li><a href="https://www.kaspersky.es/resource-center/definitions/what-is-internet-security?srsltid=AfmBOoq4t10sDzdGeDWyljpJP9jja1IKGeUjc_PNYAzf_fEevjoYkkTC"
+                        target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - Kaspersky</a></li>
+                <li><a href="https://www.fortinet.com/lat/resources/cyberglossary/internet-security" target="_blank"
+                        rel="noopener noreferrer">Internet Security - Fortinet</a></li>
+                <li><a href="https://edu.gcfglobal.org/es/seguridad-en-internet/que-es-la-seguridad-en-internet/1/"
+                        target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - GCFLearnFree</a>
+                </li>
+                <li><a href="https://startupeable.com/glosario/tecnologias-emergentes/" target="_blank"
+                        rel="noopener noreferrer">Tecnologías emergentes - Startupeable</a></li>
+                <li><a href="https://www.iberdrola.com/innovacion/cuarta-revolucion-industrial" target="_blank"
+                        rel="noopener noreferrer">Cuarta revolución industrial - Iberdrola</a></li>
+                <li><a href="https://www.prosa.com.mx/blockchain/blockchain-e-internet-de-las-cosas-la-revolucion-tecnologica"
+                        target="_blank" rel="noopener noreferrer">Blockchain e Internet de las cosas - Prosa</a></li>
+                <li><a href="https://ppstech.mx/blog/las-tecnologias-emergentes-que-estan-transformando-nuestro-mundo-digital/"
+                        target="_blank" rel="noopener noreferrer">Las tecnologías emergentes que están transformando
+                        nuestro mundo digital - PPS Tech</a></li>
+            </ul>
+        </nav>
+
+        <div class="texto-3-partes">
+            <span>Eugenio Israel García Abraján</span>
+            <span>Grupo 402</span>
+            <span>Ing. en Computación</span>
+        </div>
+
+    </footer>
+
+
+    <script>
+        const footerToggleBtn = document.getElementById('footer-menu-toggle');
+        const footerMenu = document.getElementById('footer-menu');
+
+        footerToggleBtn.addEventListener('click', () => {
+            footerMenu.classList.toggle('hidden');
+        });
+    </script>
+
+
+    <button onclick="scrollToTop()" id="btn-top">↑ Volver al inicio</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+
+</html>
