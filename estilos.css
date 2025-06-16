@@ -424,3 +424,28 @@ img {
     padding-left: 10px;
   }
 }
+
+
+/*=============*/
+@media (max-width: 600px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column !important;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .flex-container img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    float: none !important;
+    margin: 0 auto 10px auto !important;
+    display: block !important;
+  }
+
+  .flex-container span {
+    width: 100%;
+    display: block;
+  }
+}
