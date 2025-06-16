@@ -5,9 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Resumen de Redes e Internet</title>
-    <link rel="stylesheet" href="estilos.css">
+    <!-- CSS crítico inline -->
+    <style>
+        body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #333; margin: 0; }
+        h1 { background: #2c3e50; color: white; padding: 40px 20px; text-align: center; margin: 0; font-size: 4em; }
+        header { background-color: #34495e; padding: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        nav a { color: #ecf0f1; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 10px 20px; border-radius: 30px; }
+        /* Puedes agregar aquí más estilos críticos si lo deseas */
+    </style>
+    <!-- CSS principal no-bloqueante -->
+    <link rel="stylesheet" href="estilos.css" media="print" onload="this.media='all'">
+    <!-- Google Fonts optimizado -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -23,8 +33,6 @@
             <a href="NuevasTecnologias.html">Nuevas Tecnologias Emergentes</a>
         </nav>
     </header>
-
-    <br>
 
     <nav id="menu-secciones">
         <h2>Menú de Secciones</h2>
@@ -299,22 +307,17 @@
             <span>Grupo 402</span>
             <span>Ing. en Computación</span>
         </div>
-
     </footer>
-
 
     <script>
         const footerToggleBtn = document.getElementById('footer-menu-toggle');
         const footerMenu = document.getElementById('footer-menu');
-
         footerToggleBtn.addEventListener('click', () => {
             footerMenu.classList.toggle('hidden');
         });
     </script>
 
-
     <button onclick="scrollToTop()" id="btn-top">↑ Volver al inicio</button>
-
     <script>
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -322,5 +325,4 @@
     </script>
 
 </body>
-
 </html>
