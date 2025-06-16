@@ -328,3 +328,48 @@ img {
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   object-fit: cover;
 }
+
+
+
+/* ===== Menú siempre visible (sticky) ===== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===== Centrar imágenes sueltas automáticamente ===== */
+img:not(.imagen-derecha):not(.imagen-izquierda):not(.imagenes-inline img) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Comportamiento de scroll suave ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== Estado activo para enlaces en menú de secciones ===== */
+#menu-secciones ul li a.active {
+    background-color: #003366;
+    color: white;
+    pointer-events: none;
+}
+
+/* ===== Estilos responsivos para móviles ===== */
+@media (max-width: 600px) {
+    .texto-3-partes {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen-derecha,
+    .imagen-izquierda {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    #menu-secciones ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
