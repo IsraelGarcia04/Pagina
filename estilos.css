@@ -331,34 +331,3 @@ img {
 
 
 
-@media (max-width: 600px) {
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #2c3e50; /* igual que tu header */
-    z-index: 9999;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: nowrap; /* evitar que se haga multi-linea */
-    justify-content: space-around; /* espaciado entre los enlaces */
-    width: 100%;
-    padding: 5px 0;
-  }
-
-  nav a {
-    flex: 1 1 auto; /* que cada enlace ocupe espacio igual */
-    text-align: center;
-    padding: 8px 0;
-    font-size: 0.9rem; /* un poco más pequeño */
-    white-space: nowrap; /* evitar que el texto se parta en varias líneas */
-  }
-
-  /* Para que el contenido no quede tapado por el menú fijo */
-  body {
-    padding-top: 45px; /* ajusta al alto exacto del header en móvil */
-  }
-}
