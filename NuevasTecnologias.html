@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUEVAS TECNOLOGIAS</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>NUEVAS TECNOLOGÍAS</title>
+    <!-- CSS crítico en línea para mejor primer renderizado -->
+    <style>
+        body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #222; margin: 0; }
+        h1 { background: #2c3e50; color: #fff; padding: 40px 20px; text-align: center; margin: 0; font-size: 3em; }
+        header { background: #34495e; padding: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.14); }
+        nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        nav a { color: #ecf0f1; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 10px 20px; border-radius: 30px; }
+        nav a.active { background: #2c3e50; }
+        main, section { max-width: 950px; margin: 0 auto; padding: 2em 1em; }
+        #menu-secciones { background: #eaf1f6; border-radius: 10px; max-width: 900px; margin: 2em auto 1em auto; padding: 1em 2em; }
+        #menu-secciones h2 { margin-top: 0; }
+        #menu-secciones ul { margin: 0; padding-left: 1.2em; }
+        .flex-container { display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; }
+        .flex-container img { max-width: 300px; width: 45%; min-width: 140px; height: auto; border-radius: 10px; box-shadow: 0 2px 10px 0 rgba(0,0,0,.08); }
+        .flex-container .imagen-derecha { order: 2; margin-left: 1em; }
+        .flex-container .imagen-izquierda { order: 1; margin-right: 1em; }
+        .flex-container span { flex: 1 1 200px; display: block; min-width: 180px; }
+        footer { background: #222c37; color: #fff; padding: 2em 1em 1em 1em; margin-top: 3em; }
+        .texto-3-partes { display: flex; justify-content: space-between; max-width: 900px; margin: 1.5em auto 0 auto; font-size: 1em; }
+        #footer-menu-toggle { background: #eaf1f6; color: #222c37; font-weight: bold; border: none; padding: 0.5em 1em; border-radius: 15px; cursor: pointer; font-size: 1em; }
+        #footer-menu { margin-top: 1em; }
+        #footer-menu.hidden { display: none; }
+        #btn-top { position: fixed; bottom: 24px; right: 24px; background: #2c3e50; color: #fff; border: none; border-radius: 50%; width: 48px; height: 48px; font-size: 1.5em; cursor: pointer; box-shadow: 0 2px 10px 0 rgba(0,0,0,.1); }
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            main, section, #menu-secciones { max-width: 97vw; padding-left: 2vw; padding-right: 2vw; }
+            .texto-3-partes { flex-direction: column; gap: 6px; align-items: flex-start; }
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; padding: 20px 5px; }
+            .flex-container { flex-direction: column; gap: 10px; }
+            .flex-container img { width: 100%; max-width: 100%; margin: 0 0 10px 0; }
+            .flex-container .imagen-derecha, .flex-container .imagen-izquierda { margin: 0; }
+            .flex-container span { width: 100%; }
+            #btn-top { width: 40px; height: 40px; font-size: 1.1em; bottom: 14px; right: 14px; }
+        }
+    </style>
+    <link rel="stylesheet" href="estilos.css" media="print" onload="this.media='all'">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>ORIGEN Y EVOLUCION DEL INTERNET</h1>
+    <h1>ORIGEN Y EVOLUCIÓN DEL INTERNET</h1>
 
     <header>
         <nav>
@@ -19,11 +56,9 @@
             <a href="EstructuraYComponentes.html">Estructura Y Componentes</a>
             <a href="ServiciosYAplicaciones.html">Servicios Y Aplicaciones</a>
             <a href="Seguridad.html">Seguridad</a>
-            <a href="NuevasTecnologias.html" class="active">Nuevas Tecnologias Emergentes</a>
+            <a href="NuevasTecnologias.html" class="active">Nuevas Tecnologías Emergentes</a>
         </nav>
     </header>
-
-    <br>
 
     <nav id="menu-secciones">
         <h2>Menú de Secciones</h2>
@@ -49,7 +84,6 @@
         </p>
     </section>
 
-
     <section id="cuarta-ri">
         <h2>La Cuarta Revolución Industrial (Industria 4.0)</h2>
         <p class="flex-container">
@@ -71,7 +105,7 @@
     <section id="inteligencia-artificial">
         <h2>Inteligencia Artificial (IA)</h2>
         <p class="flex-container">
-            <img src="img/IA.webp" class="imagen-izquierda">
+            <img src="img/IA.webp" class="imagen-izquierda" alt="Inteligencia Artificial">
             <span>
                 La Inteligencia Artificial es una pieza clave en la automatización y optimización industrial. Integrada
                 con Big Data y Machine Learning, permite que los sistemas aprendan, analicen y tomen decisiones sin
@@ -87,7 +121,7 @@
     <section id="blockchain">
         <h2>Blockchain</h2>
         <p class="flex-container">
-            <img src="img/BlockChain.webp" class="imagen-derecha">
+            <img src="img/BlockChain.webp" class="imagen-derecha" alt="Blockchain">
 
             <span>
                 El blockchain es una base de datos distribuida e inmutable que permite registrar transacciones de forma
@@ -105,7 +139,7 @@
     <section id="iot">
         <h2>Internet de las Cosas (IoT)</h2>
         <p class="flex-container">
-            <img src="img/Iot.jpg" class="imagen-izquierda">
+            <img src="img/Iot.jpg" class="imagen-izquierda" alt="Internet de las Cosas">
             <span>
                 El Internet de las Cosas interconecta sensores y dispositivos —desde electrodomésticos hasta maquinaria
                 industrial— para recolectar datos y automatizar acciones. En su vertiente industrial (IIoT), se conecta
@@ -120,7 +154,7 @@
     <section id="rv-ra">
         <h2>Realidad Virtual (RV) y Realidad Aumentada (RA)</h2>
         <p class="flex-container">
-            <img src="img/Realidad Aumentada.webp" class="imagen-derecha">
+            <img src="img/Realidad Aumentada.webp" class="imagen-derecha" alt="Realidad Aumentada y Virtual">
             <span>
                 RV y RA superponen información digital al mundo real o crean entornos virtuales inmersivos. En la
                 Industria
@@ -145,7 +179,6 @@
             y políticas para reducir la brecha digital a nivel global.
         </p>
     </section>
-
 
     <footer>
         <button id="footer-menu-toggle" aria-label="Mostrar bibliografía">☰ Bibliografía</button>
@@ -186,27 +219,20 @@
             <span>Grupo 402</span>
             <span>Ing. en Computación</span>
         </div>
-
     </footer>
-
 
     <script>
         const footerToggleBtn = document.getElementById('footer-menu-toggle');
         const footerMenu = document.getElementById('footer-menu');
-
         footerToggleBtn.addEventListener('click', () => {
             footerMenu.classList.toggle('hidden');
         });
     </script>
-
     <button onclick="scrollToTop()" id="btn-top">↑ Volver al inicio</button>
-
     <script>
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
-
 </body>
-
 </html>
