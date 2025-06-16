@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEGURIDAD</title>
-    <link rel="stylesheet" href="estilos.css">
+    <!-- CSS crítico en línea para mejor primer renderizado -->
+    <style>
+        body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #222; margin: 0; }
+        h1 { background: #2c3e50; color: #fff; padding: 40px 20px; text-align: center; margin: 0; font-size: 3em; }
+        header { background: #34495e; padding: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.14); }
+        nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        nav a { color: #ecf0f1; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 10px 20px; border-radius: 30px; }
+        nav a.active { background: #2c3e50; }
+        main { max-width: 950px; margin: 0 auto; padding: 2em 1em; }
+    </style>
+    <link rel="stylesheet" href="estilos.css" media="print" onload="this.media='all'">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -23,8 +33,6 @@
         </nav>
     </header>
 
-    <br>
-
     <main>
         <h2>Seguridad en Internet: Concepto y Importancia</h2>
         <p>La seguridad en Internet es un conjunto de tecnologías, prácticas y medidas diseñadas para proteger la
@@ -32,16 +40,13 @@
             salvaguardar la confidencialidad, integridad y disponibilidad de los datos, evitando que sean robados,
             modificados o destruidos por ataques maliciosos. En un mundo cada vez más interconectado, la seguridad
             en Internet es vital para usuarios individuales, empresas y gobiernos, ya que la mayoría de nuestras
-            actividades diarias —desde enviar correos hasta realizar operaciones financieras o gestionar
-            infraestructuras
+            actividades diarias —desde enviar correos hasta realizar operaciones financieras o gestionar infraestructuras
             críticas— dependen de conexiones seguras y fiables.</p>
 
         <h2>Amenazas comunes en Internet</h2>
         <p>Internet está expuesto a diversas amenazas que pueden comprometer la seguridad de los usuarios y sistemas.
             Algunas de las más frecuentes incluyen:</p>
         <ul>
-
-
             <li><strong>Malware:</strong> Software malicioso diseñado para dañar, controlar o robar información de un
                 sistema. Entre sus variantes se encuentran virus, troyanos, spyware, ransomware y adware.</li>
             <li><strong>Phishing:</strong> Técnicas de ingeniería social que intentan engañar a los usuarios para que
@@ -50,18 +55,14 @@
             <li><strong>Ataques de denegación de servicio (DDoS):</strong> Intentos de saturar un servidor o red para
                 que deje de funcionar, interrumpiendo el acceso legítimo a servicios en línea.</li>
             <li><strong>Robo de identidad:</strong> Uso fraudulento de datos personales para realizar actividades
-                ilegales
-                o obtener beneficios no autorizados.</li>
+                ilegales o obtener beneficios no autorizados.</li>
             <li><strong>Vulnerabilidades de software:</strong> Fallas en aplicaciones o sistemas operativos que pueden
-                ser
-                explotadas para acceder sin permiso o instalar malware.</li>
-            <div class="imagenes-inline">
-                <img src="img/Malware.webp"
-                    style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
-                <img src="img/Inseguridad.jpg"
-                    style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
-            </div>
+                ser explotadas para acceder sin permiso o instalar malware.</li>
         </ul>
+        <div class="imagenes-inline">
+            <img src="img/Malware.webp" alt="Ilustración de malware">
+            <img src="img/Inseguridad.jpg" alt="Ilustración de inseguridad informática">
+        </div>
         <p>Estas amenazas requieren un enfoque integral de seguridad para ser mitigadas eficazmente.</p>
 
         <h2>Principios básicos de la seguridad en Internet</h2>
@@ -78,36 +79,30 @@
         <h2>Herramientas y técnicas de protección</h2>
         <p>Existen múltiples herramientas y métodos para mejorar la seguridad en Internet, entre ellas:</p>
         <ul>
-
-
             <li><strong>Antivirus y antimalware:</strong> Programas que detectan, bloquean y eliminan software malicioso
-                antes de que cause daño.
-            </li>
+                antes de que cause daño.</li>
             <li><strong>Firewalls:</strong> Sistemas que controlan el tráfico de red para permitir o bloquear conexiones
                 según reglas definidas, protegiendo así las redes internas de accesos no autorizados.</li>
             <li><strong>Sistemas de detección y prevención de intrusiones (IDS/IPS):</strong> Soluciones que monitorean
                 el tráfico y alertan o bloquean actividades sospechosas.</li>
             <li><strong>Autenticación multifactor (MFA):</strong> Método que requiere varias formas de verificación (por
                 ejemplo, contraseña más código enviado al móvil) para acceder a una cuenta, aumentando la seguridad
-                frente
-                a robos de credenciales.</li>
+                frente a robos de credenciales.</li>
             <li><strong>Cifrado:</strong> Técnica que codifica la información para que solo pueda ser leída por personas
                 autorizadas, fundamental en comunicaciones seguras como el correo electrónico o la banca en línea.</li>
             <li><strong>Actualizaciones y parches:</strong> Mantener el software al día para corregir vulnerabilidades
                 conocidas que pueden ser explotadas por atacantes.</li>
-            <div class="imagenes-inline">
-                <img src="img/Antivirus.png"
-                    style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
-                <img src="img/Seguridad.webp"
-                    style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
-            </div>
         </ul>
+        <div class="imagenes-inline">
+            <img src="img/Antivirus.png" alt="Ejemplo de antivirus">
+            <img src="img/Seguridad.webp" alt="Ilustración de seguridad informática">
+        </div>
 
         <h2>Buenas prácticas para los usuarios</h2>
         <p>Los usuarios también juegan un papel clave en la seguridad en Internet. Algunas recomendaciones importantes
             incluyen:</p>
         <ul>
-            <li>Usar contraseñas fuertes, únicas y cambiararlas periódicamente.</li>
+            <li>Usar contraseñas fuertes, únicas y cambiarlas periódicamente.</li>
             <li>No compartir información personal en sitios o con personas desconocidas.</li>
             <li>Verificar la autenticidad de correos electrónicos o enlaces antes de hacer clic (para evitar phishing).
             </li>
@@ -121,13 +116,10 @@
         <p>La evolución constante de las amenazas cibernéticas exige una actualización continua en las estrategias de
             seguridad. El aumento de dispositivos conectados (Internet de las cosas - IoT), la expansión del trabajo
             remoto y el crecimiento de la nube plantean nuevos riesgos que requieren soluciones avanzadas como
-            inteligencia
-            artificial para detección automática de ataques y arquitecturas de seguridad adaptativas. Además, la
-            concienciación y formación de usuarios es fundamental para crear una cultura de seguridad sólida y reducir
-            el
-            riesgo humano.</p>
+            inteligencia artificial para detección automática de ataques y arquitecturas de seguridad adaptativas.
+            Además, la concienciación y formación de usuarios es fundamental para crear una cultura de seguridad sólida
+            y reducir el riesgo humano.</p>
     </main>
-
 
     <footer>
         <button id="footer-menu-toggle" aria-label="Mostrar bibliografía">☰ Bibliografía</button>
@@ -162,33 +154,26 @@
                         nuestro mundo digital - PPS Tech</a></li>
             </ul>
         </nav>
-
         <div class="texto-3-partes">
             <span>Eugenio Israel García Abraján</span>
             <span>Grupo 402</span>
             <span>Ing. en Computación</span>
         </div>
-
     </footer>
-
 
     <script>
         const footerToggleBtn = document.getElementById('footer-menu-toggle');
         const footerMenu = document.getElementById('footer-menu');
-
         footerToggleBtn.addEventListener('click', () => {
             footerMenu.classList.toggle('hidden');
         });
     </script>
-
     <button onclick="scrollToTop()" id="btn-top">↑ Volver al inicio</button>
-
     <script>
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
-
 </body>
 
 </html>
