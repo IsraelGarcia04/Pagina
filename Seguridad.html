@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEGURIDAD</title>
+    <title>Seguridad en Internet</title>
+    <!-- SEO: Descripción -->
+    <meta name="description" content="Aprende sobre los conceptos, amenazas, herramientas y buenas prácticas de seguridad en Internet para proteger tus datos y dispositivos.">
+    <!-- Google Fonts optimizado -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" media="all">
+    <!-- CSS principal siempre carga inmediatamente -->
+    <link rel="stylesheet" href="estilos.css" media="all">
     <!-- CSS crítico en línea para mejor primer renderizado -->
     <style>
         body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #222; margin: 0; }
@@ -14,22 +20,22 @@
         nav a { color: #ecf0f1; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 10px 20px; border-radius: 30px; }
         nav a.active { background: #2c3e50; }
         main { max-width: 950px; margin: 0 auto; padding: 2em 1em; }
+        .imagenes-inline { display: flex; gap: 1.5em; justify-content: center; flex-wrap: wrap; margin: 1.5em 0; }
+        .imagenes-inline img { width: 230px; height: 150px; object-fit: cover; border-radius: 10px; background: #eee; }
     </style>
-    <link rel="stylesheet" href="estilos.css" media="print" onload="this.media='all'">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>ORIGEN Y EVOLUCION DEL INTERNET</h1>
+    <h1>Seguridad en Internet</h1>
 
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <a href="index.html">Inicio</a>
-            <a href="EstructuraYComponentes.html">Estructura Y Componentes</a>
-            <a href="ServiciosYAplicaciones.html">Servicios Y Aplicaciones</a>
-            <a href="Seguridad.html" class="active">Seguridad</a>
-            <a href="NuevasTecnologias.html">Nuevas Tecnologias Emergentes</a>
+            <a href="EstructuraYComponentes.html">Estructura y Componentes</a>
+            <a href="ServiciosYAplicaciones.html">Servicios y Aplicaciones</a>
+            <a href="Seguridad.html" class="active" aria-current="page">Seguridad</a>
+            <a href="NuevasTecnologias.html">Nuevas Tecnologías Emergentes</a>
         </nav>
     </header>
 
@@ -60,8 +66,8 @@
                 ser explotadas para acceder sin permiso o instalar malware.</li>
         </ul>
         <div class="imagenes-inline">
-            <img src="img/Malware.webp" alt="Ilustración de malware">
-            <img src="img/Inseguridad.jpg" alt="Ilustración de inseguridad informática">
+            <img src="img/Malware.webp" alt="Ilustración de malware" width="230" height="150" loading="lazy">
+            <img src="img/Inseguridad.jpg" alt="Ilustración de inseguridad informática" width="230" height="150" loading="lazy">
         </div>
         <p>Estas amenazas requieren un enfoque integral de seguridad para ser mitigadas eficazmente.</p>
 
@@ -94,8 +100,8 @@
                 conocidas que pueden ser explotadas por atacantes.</li>
         </ul>
         <div class="imagenes-inline">
-            <img src="img/Antivirus.png" alt="Ejemplo de antivirus">
-            <img src="img/Seguridad.webp" alt="Ilustración de seguridad informática">
+            <img src="img/Antivirus.png" alt="Ejemplo de antivirus" width="230" height="150" loading="lazy">
+            <img src="img/Seguridad.webp" alt="Ilustración de seguridad informática" width="230" height="150" loading="lazy">
         </div>
 
         <h2>Buenas prácticas para los usuarios</h2>
@@ -122,12 +128,11 @@
     </main>
 
     <footer>
-        <button id="footer-menu-toggle" aria-label="Mostrar bibliografía">☰ Bibliografía</button>
-        <nav id="footer-menu" class="hidden">
+        <button id="footer-menu-toggle" aria-label="Mostrar bibliografía" aria-controls="footer-menu" aria-expanded="false">☰ Bibliografía</button>
+        <nav id="footer-menu" class="hidden" aria-label="Bibliografía">
             <ul>
                 <li><a href="https://continuemosestudiando.abc.gob.ar/contenido/origen-y-evolucion-de-internet/"
-                        target="_blank" rel="noopener noreferrer">Origen y evolución de Internet - Continuemos
-                        Estudiando</a></li>
+                        target="_blank" rel="noopener noreferrer">Origen y evolución de Internet - Continuemos Estudiando</a></li>
                 <li><a href="https://concepto.de/historia-de-internet/" target="_blank"
                         rel="noopener noreferrer">Historia de Internet - Concepto</a></li>
                 <li><a href="https://www.digitalrecovery.com.co/como-se-estructura-el-internet/" target="_blank"
@@ -141,8 +146,7 @@
                 <li><a href="https://www.fortinet.com/lat/resources/cyberglossary/internet-security" target="_blank"
                         rel="noopener noreferrer">Internet Security - Fortinet</a></li>
                 <li><a href="https://edu.gcfglobal.org/es/seguridad-en-internet/que-es-la-seguridad-en-internet/1/"
-                        target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - GCFLearnFree</a>
-                </li>
+                        target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - GCFLearnFree</a></li>
                 <li><a href="https://startupeable.com/glosario/tecnologias-emergentes/" target="_blank"
                         rel="noopener noreferrer">Tecnologías emergentes - Startupeable</a></li>
                 <li><a href="https://www.iberdrola.com/innovacion/cuarta-revolucion-industrial" target="_blank"
@@ -150,8 +154,7 @@
                 <li><a href="https://www.prosa.com.mx/blockchain/blockchain-e-internet-de-las-cosas-la-revolucion-tecnologica"
                         target="_blank" rel="noopener noreferrer">Blockchain e Internet de las cosas - Prosa</a></li>
                 <li><a href="https://ppstech.mx/blog/las-tecnologias-emergentes-que-estan-transformando-nuestro-mundo-digital/"
-                        target="_blank" rel="noopener noreferrer">Las tecnologías emergentes que están transformando
-                        nuestro mundo digital - PPS Tech</a></li>
+                        target="_blank" rel="noopener noreferrer">Las tecnologías emergentes que están transformando nuestro mundo digital - PPS Tech</a></li>
             </ul>
         </nav>
         <div class="texto-3-partes">
@@ -160,20 +163,19 @@
             <span>Ing. en Computación</span>
         </div>
     </footer>
-
+    <button onclick="scrollToTop()" id="btn-top" aria-label="Volver al inicio">↑ Volver al inicio</button>
     <script>
+        // Accesibilidad: actualiza aria-expanded para lectores de pantalla
         const footerToggleBtn = document.getElementById('footer-menu-toggle');
         const footerMenu = document.getElementById('footer-menu');
         footerToggleBtn.addEventListener('click', () => {
+            const expanded = footerToggleBtn.getAttribute('aria-expanded') === 'true' || false;
+            footerToggleBtn.setAttribute('aria-expanded', !expanded);
             footerMenu.classList.toggle('hidden');
         });
-    </script>
-    <button onclick="scrollToTop()" id="btn-top">↑ Volver al inicio</button>
-    <script>
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 </body>
-
 </html>
