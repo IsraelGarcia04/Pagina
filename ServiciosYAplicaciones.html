@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERVICIOS Y APLICACIONES</title>
+    <title>Servicios y Aplicaciones de Internet</title>
+    <!-- SEO: Descripción -->
+    <meta name="description" content="Descubre los principales servicios y aplicaciones de Internet como la Web, correo electrónico, chat, FTP, videoconferencia y buscadores.">
+    <!-- Google Fonts optimizado -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" media="all">
+    <!-- CSS principal siempre carga inmediatamente -->
+    <link rel="stylesheet" href="estilos.css" media="all">
     <!-- CSS crítico inline -->
     <style>
         body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #333; margin: 0; }
@@ -12,144 +18,140 @@
         header { background-color: #34495e; padding: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
         nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
         nav a { color: #ecf0f1; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 10px 20px; border-radius: 30px; }
-        /* Puedes agregar aquí más estilos críticos si lo deseas */
     </style>
-    <!-- CSS principal no-bloqueante -->
-    <link rel="stylesheet" href="estilos.css" media="print" onload="this.media='all'">
-    <!-- Google Fonts optimizado -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>ORIGEN Y EVOLUCION DEL INTERNET</h1>
+    <h1>Servicios y Aplicaciones de Internet</h1>
 
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <a href="index.html">Inicio</a>
-            <a href="EstructuraYComponentes.html">Estructura Y Componentes</a>
-            <a href="ServiciosYAplicaciones.html" class="active">Servicios Y Aplicaciones</a>
+            <a href="EstructuraYComponentes.html">Estructura y Componentes</a>
+            <a href="ServiciosYAplicaciones.html" class="active" aria-current="page">Servicios y Aplicaciones</a>
             <a href="Seguridad.html">Seguridad</a>
-            <a href="NuevasTecnologias.html">Nuevas Tecnologias Emergentes</a>
+            <a href="NuevasTecnologias.html">Nuevas Tecnologías Emergentes</a>
         </nav>
     </header>
 
-    <h2>Servicios de Internet</h2>
-    <p class="flex-container">
-        <img src="img/ServiciosDeInternet.webp" class="imagen-derecha">
-        <span>
-            Internet ofrece una amplia gama de servicios que facilitan la comunicación, el acceso a la
-            información y el intercambio de datos a nivel global. Estos servicios se pueden dividir
-            en dos grandes categorías: servicios síncronos, que funcionan en tiempo real, como las
-            videoconferencias y el chat, y servicios asíncronos, que no requieren que los usuarios
-            estén conectados simultáneamente, como el correo electrónico o la transferencia de archivos.
-            Gracias a estos servicios, las personas y las empresas pueden comunicarse eficazmente,
-            compartir recursos y colaborar desde cualquier parte del mundo, lo que ha transformado
-            profundamente la forma en que vivimos, trabajamos y nos relacionamos.
-        </span>
-    </p>
+    <main>
+        <h2>Servicios de Internet</h2>
+        <div class="flex-container">
+            <img src="img/ServiciosDeInternet.webp" class="imagen-derecha" alt="Ilustración de servicios de Internet" width="400" height="250" loading="lazy">
+            <span>
+                Internet ofrece una amplia gama de servicios que facilitan la comunicación, el acceso a la
+                información y el intercambio de datos a nivel global. Estos servicios se pueden dividir
+                en dos grandes categorías: servicios síncronos, que funcionan en tiempo real, como las
+                videoconferencias y el chat, y servicios asíncronos, que no requieren que los usuarios
+                estén conectados simultáneamente, como el correo electrónico o la transferencia de archivos.
+                Gracias a estos servicios, las personas y las empresas pueden comunicarse eficazmente,
+                compartir recursos y colaborar desde cualquier parte del mundo, lo que ha transformado
+                profundamente la forma en que vivimos, trabajamos y nos relacionamos.
+            </span>
+        </div>
 
-    <h2>World Wide Web (WWW)</h2>
-    <p class="flex-container">
-        <img src="img/WWW.jpg" class="imagen-izquierda">
-        <span>
-            La World Wide Web, comúnmente conocida como WWW o simplemente web, fue creada a principios
-            de los años 90 y revolucionó la manera en que accedemos a la información en Internet. A
-            diferencia de las primeras redes que solo permitían el intercambio de texto, la WWW permite
-            la publicación y el acceso a contenidos multimedia, como imágenes, videos, audios y documentos
-            interactivos. Funciona mediante el sistema de hipertexto, que enlaza páginas web entre sí
-            a través de enlaces, y utiliza el protocolo HTTP para la transferencia de datos. Los usuarios
-            acceden a la web mediante navegadores como Google Chrome, Firefox o Safari, que interpretan
-            el código HTML y otros lenguajes para mostrar la información de forma amigable. La WWW ha
-            sido clave para la democratización del acceso al conocimiento y la creación de espacios de
-            interacción digital.
-        </span>
-    </p>
+        <h2>World Wide Web (WWW)</h2>
+        <div class="flex-container">
+            <img src="img/WWW.jpg" class="imagen-izquierda" alt="Logo de la World Wide Web" width="400" height="250" loading="lazy">
+            <span>
+                La World Wide Web, comúnmente conocida como WWW o simplemente web, fue creada a principios
+                de los años 90 y revolucionó la manera en que accedemos a la información en Internet. A
+                diferencia de las primeras redes que solo permitían el intercambio de texto, la WWW permite
+                la publicación y el acceso a contenidos multimedia, como imágenes, videos, audios y documentos
+                interactivos. Funciona mediante el sistema de hipertexto, que enlaza páginas web entre sí
+                a través de enlaces, y utiliza el protocolo HTTP para la transferencia de datos. Los usuarios
+                acceden a la web mediante navegadores como Google Chrome, Firefox o Safari, que interpretan
+                el código HTML y otros lenguajes para mostrar la información de forma amigable. La WWW ha
+                sido clave para la democratización del acceso al conocimiento y la creación de espacios de
+                interacción digital.
+            </span>
+        </div>
 
-    <h2>Buscadores</h2>
-    <p class="flex-container">
-        <img src="img/Buscadores.png" class="imagen-derecha">
-        <span>
-            Con la enorme cantidad de información disponible en la web, encontrar datos específicos puede
-            ser un desafío. Aquí es donde los buscadores juegan un papel fundamental. Estos motores de
-            búsqueda, como Google, Bing o DuckDuckGo, permiten a los usuarios localizar rápidamente páginas
-            web relevantes mediante la introducción de palabras clave o frases. Los buscadores utilizan
-            algoritmos avanzados que analizan, indexan y clasifican millones de páginas para ofrecer
-            resultados precisos y ordenados por relevancia. No obstante, no todos los sitios web están
-            indexados, ya que algunos están protegidos por contraseñas, no cumplen con ciertos criterios
-            de calidad o están bloqueados por los administradores de la red. Además, los buscadores
-            también ofrecen servicios complementarios como mapas, noticias, imágenes y vídeos, ampliando
-            su utilidad.
-        </span>
-    </p>
+        <h2>Buscadores</h2>
+        <div class="flex-container">
+            <img src="img/Buscadores.png" class="imagen-derecha" alt="Motores de búsqueda como Google y Bing" width="400" height="250" loading="lazy">
+            <span>
+                Con la enorme cantidad de información disponible en la web, encontrar datos específicos puede
+                ser un desafío. Aquí es donde los buscadores juegan un papel fundamental. Estos motores de
+                búsqueda, como Google, Bing o DuckDuckGo, permiten a los usuarios localizar rápidamente páginas
+                web relevantes mediante la introducción de palabras clave o frases. Los buscadores utilizan
+                algoritmos avanzados que analizan, indexan y clasifican millones de páginas para ofrecer
+                resultados precisos y ordenados por relevancia. No obstante, no todos los sitios web están
+                indexados, ya que algunos están protegidos por contraseñas, no cumplen con ciertos criterios
+                de calidad o están bloqueados por los administradores de la red. Además, los buscadores
+                también ofrecen servicios complementarios como mapas, noticias, imágenes y vídeos, ampliando
+                su utilidad.
+            </span>
+        </div>
 
-    <h2>Correo Electrónico</h2>
-    <p class="flex-container">
-        <img src="img/Correo.jpeg" class="imagen-izquierda">
-        <span>
-            El correo electrónico es uno de los servicios más antiguos y esenciales de Internet. Permite el
-            envío y recepción de mensajes escritos entre usuarios de forma rápida y eficiente. Más allá de
-            simples mensajes de texto, el correo electrónico puede incluir archivos adjuntos, enlaces y
-            formatos multimedia. Es una herramienta imprescindible tanto en la vida personal como en el
-            ámbito profesional, facilitando la comunicación entre colegas, clientes y proveedores sin
-            las limitaciones del horario o la ubicación geográfica. Los sistemas de correo electrónico
-            funcionan mediante servidores específicos que almacenan y gestionan los mensajes, y existen
-            múltiples plataformas como Gmail, Outlook o Yahoo Mail que ofrecen funcionalidades adicionales
-            como filtros anti-spam, calendarios y agendas integradas.
-        </span>
-    </p>
+        <h2>Correo Electrónico</h2>
+        <div class="flex-container">
+            <img src="img/Correo.jpeg" class="imagen-izquierda" alt="Icono de correo electrónico" width="400" height="250" loading="lazy">
+            <span>
+                El correo electrónico es uno de los servicios más antiguos y esenciales de Internet. Permite el
+                envío y recepción de mensajes escritos entre usuarios de forma rápida y eficiente. Más allá de
+                simples mensajes de texto, el correo electrónico puede incluir archivos adjuntos, enlaces y
+                formatos multimedia. Es una herramienta imprescindible tanto en la vida personal como en el
+                ámbito profesional, facilitando la comunicación entre colegas, clientes y proveedores sin
+                las limitaciones del horario o la ubicación geográfica. Los sistemas de correo electrónico
+                funcionan mediante servidores específicos que almacenan y gestionan los mensajes, y existen
+                múltiples plataformas como Gmail, Outlook o Yahoo Mail que ofrecen funcionalidades adicionales
+                como filtros anti-spam, calendarios y agendas integradas.
+            </span>
+        </div>
 
-    <h2>Chat</h2>
-    <p class="flex-container">
-        <img src="img/chat.webp" class="imagen-derecha">
-        <span>
-            El chat es un servicio que permite la comunicación instantánea entre dos o más personas mediante
-            mensajes escritos, que se envían y reciben en tiempo real. Este tipo de comunicación es especialmente
-            útil para conversaciones rápidas, soporte técnico, colaboración en proyectos o simplemente para
-            socializar. Las aplicaciones de chat pueden incluir funciones avanzadas como envío de archivos,
-            videollamadas, grupos de conversación y emojis, enriqueciendo la experiencia comunicativa. Hoy
-            en día, plataformas como WhatsApp, Telegram o Slack son esenciales tanto para uso personal como
-            profesional, permitiendo mantener el contacto constante y facilitar la coordinación entre equipos
-            de trabajo distribuidos geográficamente.
-        </span>
-    </p>
+        <h2>Chat</h2>
+        <div class="flex-container">
+            <img src="img/chat.webp" class="imagen-derecha" alt="Aplicaciones de chat en Internet" width="400" height="250" loading="lazy">
+            <span>
+                El chat es un servicio que permite la comunicación instantánea entre dos o más personas mediante
+                mensajes escritos, que se envían y reciben en tiempo real. Este tipo de comunicación es especialmente
+                útil para conversaciones rápidas, soporte técnico, colaboración en proyectos o simplemente para
+                socializar. Las aplicaciones de chat pueden incluir funciones avanzadas como envío de archivos,
+                videollamadas, grupos de conversación y emojis, enriqueciendo la experiencia comunicativa. Hoy
+                en día, plataformas como WhatsApp, Telegram o Slack son esenciales tanto para uso personal como
+                profesional, permitiendo mantener el contacto constante y facilitar la coordinación entre equipos
+                de trabajo distribuidos geográficamente.
+            </span>
+        </div>
 
-    <h2>FTP (File Transfer Protocol)</h2>
-    <p class="flex-container">
-        <img src="img/FTP.jfif" class="imagen-izquierda">
-        <span>
-            El protocolo FTP es una herramienta fundamental para la transferencia de archivos entre computadoras
-            conectadas a través de Internet o redes locales. Su función principal es permitir la subida y descarga
-            de archivos a y desde servidores remotos, facilitando el manejo de grandes volúmenes de datos o
-            actualizaciones de sitios web. FTP puede ser utilizado tanto por usuarios avanzados como por
-            administradores de sistemas para gestionar contenidos, hacer copias de seguridad o distribuir
-            software. Aunque es un protocolo muy extendido, actualmente existen alternativas más seguras
-            como SFTP (FTP seguro) o FTPS, que incorporan cifrado para proteger la información durante la
-            transferencia.
-        </span>
-    </p>
+        <h2>FTP (File Transfer Protocol)</h2>
+        <div class="flex-container">
+            <img src="img/FTP.jfif" class="imagen-izquierda" alt="Representación de FTP para transferencia de archivos" width="400" height="250" loading="lazy">
+            <span>
+                El protocolo FTP es una herramienta fundamental para la transferencia de archivos entre computadoras
+                conectadas a través de Internet o redes locales. Su función principal es permitir la subida y descarga
+                de archivos a y desde servidores remotos, facilitando el manejo de grandes volúmenes de datos o
+                actualizaciones de sitios web. FTP puede ser utilizado tanto por usuarios avanzados como por
+                administradores de sistemas para gestionar contenidos, hacer copias de seguridad o distribuir
+                software. Aunque es un protocolo muy extendido, actualmente existen alternativas más seguras
+                como SFTP (FTP seguro) o FTPS, que incorporan cifrado para proteger la información durante la
+                transferencia.
+            </span>
+        </div>
 
-    <h2>Videoconferencia</h2>
-    <p class="flex-container">
-        <img src="img/VideoConferencia.webp" class="imagen-derecha">
-        <span>
-            La videoconferencia es una tecnología que combina audio y video en tiempo real para permitir reuniones
-            virtuales entre personas ubicadas en diferentes lugares. Este servicio ha cobrado especial relevancia
-            en los últimos años, impulsado por el teletrabajo y la educación a distancia. Las plataformas de
-            videoconferencia, como Zoom, Microsoft Teams o Google Meet, ofrecen funciones que van desde la simple
-            comunicación visual hasta compartir pantalla, grabar sesiones y colaborar en documentos simultáneamente.
-            Esto mejora significativamente la interacción y la productividad en entornos remotos, acercando a
-            usuarios y equipos sin importar las distancias físicas.
-        </span>
-    </p>
+        <h2>Videoconferencia</h2>
+        <div class="flex-container">
+            <img src="img/VideoConferencia.webp" class="imagen-derecha" alt="Personas en videoconferencia a través de Internet" width="400" height="250" loading="lazy">
+            <span>
+                La videoconferencia es una tecnología que combina audio y video en tiempo real para permitir reuniones
+                virtuales entre personas ubicadas en diferentes lugares. Este servicio ha cobrado especial relevancia
+                en los últimos años, impulsado por el teletrabajo y la educación a distancia. Las plataformas de
+                videoconferencia, como Zoom, Microsoft Teams o Google Meet, ofrecen funciones que van desde la simple
+                comunicación visual hasta compartir pantalla, grabar sesiones y colaborar en documentos simultáneamente.
+                Esto mejora significativamente la interacción y la productividad en entornos remotos, acercando a
+                usuarios y equipos sin importar las distancias físicas.
+            </span>
+        </div>
+    </main>
 
     <footer>
-        <button id="footer-menu-toggle" aria-label="Mostrar bibliografía">☰ Bibliografía</button>
-        <nav id="footer-menu" class="hidden">
+        <button id="footer-menu-toggle" aria-label="Mostrar bibliografía" aria-controls="footer-menu" aria-expanded="false">☰ Bibliografía</button>
+        <nav id="footer-menu" class="hidden" aria-label="Bibliografía">
             <ul>
                 <li><a href="https://continuemosestudiando.abc.gob.ar/contenido/origen-y-evolucion-de-internet/"
-                        target="_blank" rel="noopener noreferrer">Origen y evolución de Internet - Continuemos
-                        Estudiando</a></li>
+                        target="_blank" rel="noopener noreferrer">Origen y evolución de Internet - Continuemos Estudiando</a></li>
                 <li><a href="https://concepto.de/historia-de-internet/" target="_blank"
                         rel="noopener noreferrer">Historia de Internet - Concepto</a></li>
                 <li><a href="https://www.digitalrecovery.com.co/como-se-estructura-el-internet/" target="_blank"
@@ -187,23 +189,20 @@
         </div>
     </footer>
 
+    <button onclick="scrollToTop()" id="btn-top" aria-label="Volver al inicio">↑ Volver al inicio</button>
     <script>
+        // Accesibilidad: actualiza aria-expanded para lectores de pantalla
         const footerToggleBtn = document.getElementById('footer-menu-toggle');
         const footerMenu = document.getElementById('footer-menu');
-
         footerToggleBtn.addEventListener('click', () => {
+            const expanded = footerToggleBtn.getAttribute('aria-expanded') === 'true' || false;
+            footerToggleBtn.setAttribute('aria-expanded', !expanded);
             footerMenu.classList.toggle('hidden');
         });
-    </script>
-
-    <button onclick="scrollToTop()" id="btn-top">↑ Volver al inicio</button>
-
-    <script>
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 
 </body>
-
 </html>
