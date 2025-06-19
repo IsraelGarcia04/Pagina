@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Resumen de Redes e Internet</title>
+    <title>Estructura y Componentes del Internet</title>
+    <!-- SEO: Descripción -->
+    <meta name="description" content="Aprende sobre los componentes, dispositivos y protocolos clave que forman parte de la estructura de Internet y las redes.">
+    <!-- Google Fonts optimizado -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" media="all">
+    <!-- CSS principal no-bloqueante -->
+    <link rel="stylesheet" href="estilos.css" media="all">
     <!-- CSS crítico inline -->
     <style>
         body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #333; margin: 0; }
@@ -12,29 +17,21 @@
         header { background-color: #34495e; padding: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
         nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
         nav a { color: #ecf0f1; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 10px 20px; border-radius: 30px; }
-        /* Puedes agregar aquí más estilos críticos si lo deseas */
     </style>
-    <!-- CSS principal no-bloqueante -->
-    <link rel="stylesheet" href="estilos.css" media="print" onload="this.media='all'">
-    <!-- Google Fonts optimizado -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <h1>ORIGEN Y EVOLUCION DEL INTERNET</h1>
-
+    <h1>Estructura y Componentes del Internet</h1>
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <a href="index.html">Inicio</a>
-            <a href="EstructuraYComponentes.html" class="active">Estructura Y Componentes</a>
-            <a href="ServiciosYAplicaciones.html">Servicios Y Aplicaciones</a>
+            <a href="EstructuraYComponentes.html" class="active" aria-current="page">Estructura y Componentes</a>
+            <a href="ServiciosYAplicaciones.html">Servicios y Aplicaciones</a>
             <a href="Seguridad.html">Seguridad</a>
-            <a href="NuevasTecnologias.html">Nuevas Tecnologias Emergentes</a>
+            <a href="NuevasTecnologias.html">Nuevas Tecnologías Emergentes</a>
         </nav>
     </header>
 
-    <nav id="menu-secciones">
+    <nav id="menu-secciones" aria-label="Menú de Secciones">
         <h2>Menú de Secciones</h2>
         <ul>
             <li><a href="#dns">DNS</a></li>
@@ -46,7 +43,7 @@
             <li><a href="#correo-electronico">Correo Electrónico</a></li>
             <li><a href="#navegador-web">Navegador Web</a></li>
             <li><a href="#servidor">Servidor</a></li>
-            <li><a href="#estacion-trabajo">Estacion de Trabajo</a></li>
+            <li><a href="#estacion-trabajo">Estación de Trabajo</a></li>
             <li><a href="#tarjeta-red">Tarjeta de Red</a></li>
             <li><a href="#repetidor">Repetidor</a></li>
             <li><a href="#puente">Puente</a></li>
@@ -165,8 +162,7 @@
         <section>
             <p>
                 Conocer cuáles son los componentes de red te resultará de utilidad para identificar posibles problemas
-                de
-                conexión y descubrir soluciones para optimizar el funcionamiento de las redes, asegurando que cumplan su
+                de conexión y descubrir soluciones para optimizar el funcionamiento de las redes, asegurando que cumplan su
                 propósito de forma adecuada. A continuación, se describen los principales componentes de redes.
             </p>
         </section>
@@ -175,8 +171,7 @@
             <h2>El servidor</h2>
             <p>
                 Es una computadora o aplicación encargada de proporcionar servicios a otros equipos denominados
-                clientes.
-                Procesa solicitudes y entrega datos por medio de una red, ya sea local o mediante Internet.
+                clientes. Procesa solicitudes y entrega datos por medio de una red, ya sea local o mediante Internet.
             </p>
             <ul>
                 <li>Ejemplos: servidores de correo electrónico y servidores web.</li>
@@ -188,8 +183,7 @@
             <h2>La estación de trabajo</h2>
             <p>
                 Se refiere al equipo informático utilizado para tareas profesionales, técnicas o científicas. En
-                oficinas,
-                suelen estar conectadas entre sí y a un servidor, así como a periféricos y a Internet.
+                oficinas, suelen estar conectadas entre sí y a un servidor, así como a periféricos y a Internet.
             </p>
             <ul>
                 <li>Facilitan el flujo de información.</li>
@@ -269,12 +263,11 @@
     </main>
 
     <footer>
-        <button id="footer-menu-toggle" aria-label="Mostrar bibliografía">☰ Bibliografía</button>
-        <nav id="footer-menu" class="hidden">
+        <button id="footer-menu-toggle" aria-label="Mostrar bibliografía" aria-controls="footer-menu" aria-expanded="false">☰ Bibliografía</button>
+        <nav id="footer-menu" class="hidden" aria-label="Bibliografía">
             <ul>
                 <li><a href="https://continuemosestudiando.abc.gob.ar/contenido/origen-y-evolucion-de-internet/"
-                        target="_blank" rel="noopener noreferrer">Origen y evolución de Internet - Continuemos
-                        Estudiando</a></li>
+                        target="_blank" rel="noopener noreferrer">Origen y evolución de Internet - Continuemos Estudiando</a></li>
                 <li><a href="https://concepto.de/historia-de-internet/" target="_blank"
                         rel="noopener noreferrer">Historia de Internet - Concepto</a></li>
                 <li><a href="https://www.digitalrecovery.com.co/como-se-estructura-el-internet/" target="_blank"
@@ -288,8 +281,7 @@
                 <li><a href="https://www.fortinet.com/lat/resources/cyberglossary/internet-security" target="_blank"
                         rel="noopener noreferrer">Internet Security - Fortinet</a></li>
                 <li><a href="https://edu.gcfglobal.org/es/seguridad-en-internet/que-es-la-seguridad-en-internet/1/"
-                        target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - GCFLearnFree</a>
-                </li>
+                        target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - GCFLearnFree</a></li>
                 <li><a href="https://startupeable.com/glosario/tecnologias-emergentes/" target="_blank"
                         rel="noopener noreferrer">Tecnologías emergentes - Startupeable</a></li>
                 <li><a href="https://www.iberdrola.com/innovacion/cuarta-revolucion-industrial" target="_blank"
@@ -297,11 +289,9 @@
                 <li><a href="https://www.prosa.com.mx/blockchain/blockchain-e-internet-de-las-cosas-la-revolucion-tecnologica"
                         target="_blank" rel="noopener noreferrer">Blockchain e Internet de las cosas - Prosa</a></li>
                 <li><a href="https://ppstech.mx/blog/las-tecnologias-emergentes-que-estan-transformando-nuestro-mundo-digital/"
-                        target="_blank" rel="noopener noreferrer">Las tecnologías emergentes que están transformando
-                        nuestro mundo digital - PPS Tech</a></li>
+                        target="_blank" rel="noopener noreferrer">Las tecnologías emergentes que están transformando nuestro mundo digital - PPS Tech</a></li>
             </ul>
         </nav>
-
         <div class="texto-3-partes">
             <span>Eugenio Israel García Abraján</span>
             <span>Grupo 402</span>
@@ -309,20 +299,20 @@
         </div>
     </footer>
 
+    <button onclick="scrollToTop()" id="btn-top" aria-label="Volver al inicio">↑ Volver al inicio</button>
+
     <script>
+        // Accesibilidad: actualiza aria-expanded para lectores de pantalla
         const footerToggleBtn = document.getElementById('footer-menu-toggle');
         const footerMenu = document.getElementById('footer-menu');
         footerToggleBtn.addEventListener('click', () => {
+            const expanded = footerToggleBtn.getAttribute('aria-expanded') === 'true' || false;
+            footerToggleBtn.setAttribute('aria-expanded', !expanded);
             footerMenu.classList.toggle('hidden');
         });
-    </script>
-
-    <button onclick="scrollToTop()" id="btn-top">↑ Volver al inicio</button>
-    <script>
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
-
 </body>
 </html>
