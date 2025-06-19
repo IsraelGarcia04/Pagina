@@ -12,13 +12,68 @@
     <!-- CSS principal siempre carga inmediatamente -->
     <link rel="stylesheet" href="estilos.css" media="all">
     <!-- CSS crítico inline -->
-    <style>
-        body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #333; margin: 0; }
-        h1 { background: #2c3e50; color: white; padding: 40px 20px; text-align: center; margin: 0; font-size: 4em; }
-        header { background-color: #34495e; padding: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-        nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        nav a { color: #ecf0f1; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 10px 20px; border-radius: 30px; }
-    </style>
+<style>
+    body { 
+        font-family: 'Poppins', sans-serif; 
+        background: #f9f9f9; 
+        color: #333; 
+        margin: 0; 
+        overflow-x: hidden; /* <-- elimina el espacio/línea a la derecha */
+    }
+    h1 { 
+        background: #2c3e50; 
+        color: white; 
+        padding: 40px 20px; 
+        text-align: center; 
+        margin: 0; 
+        font-size: 4em; 
+    }
+    header { 
+        background-color: #34495e; 
+        padding: 10px 0; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    }
+    nav { 
+        display: flex; 
+        justify-content: center; 
+        gap: 20px; 
+        flex-wrap: wrap; 
+    }
+    nav a { 
+        color: #ecf0f1; 
+        text-decoration: none; 
+        font-weight: 600; 
+        font-size: 1.1em; 
+        padding: 10px 20px; 
+        border-radius: 30px; 
+    }
+    main, section {
+        max-width: 100vw;
+        box-sizing: border-box;
+    }
+    .flex-container,
+    .flex-container span,
+    .flex-container img {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    img, .flex-container img {
+        max-width: 100vw;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    code {
+        word-break: break-all;
+        white-space: pre-wrap;
+    }
+    @media (max-width: 600px) {
+        h1 { font-size: 2em; padding: 20px 5px; }
+        nav { flex-direction: column; gap: 10px; }
+        nav a { font-size: 1em; padding: 8px 10px; }
+        main, section { padding-left: 2vw; padding-right: 2vw; }
+    }
+</style>
 </head>
 
 <body>
