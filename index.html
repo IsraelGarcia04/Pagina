@@ -1,104 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INICIO</title>
-    
-    <style>
-        body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #333; margin: 0; }
-        h1 { background: #2c3e50; color: white; padding: 40px 20px; text-align: center; margin: 0; font-size: 4em; }
-        header { background-color: #34495e; padding: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
-        nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-        nav a { color: #ecf0f1; text-decoration: none; font-weight: 600; font-size: 1.1em; padding: 10px 20px; border-radius: 30px; }
-    </style>
-
-    <link rel="stylesheet" href="estilos.css" media="print" onload="this.media='all'">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    <title>ORIGEN Y EVOLUCIÓN DEL INTERNET</title>
+    <!-- SEO: Descripción de la página -->
+    <meta name="description" content="Descubre el origen, evolución, etapas y tecnologías del Internet, su historia, seguridad, y nuevas tendencias.">
+    <!-- Google Fonts optimizado -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" media="all">
+    <!-- CSS principal siempre carga inmediatamente -->
+    <link rel="stylesheet" href="estilos.css" media="all">
 </head>
-
 <body>
-
-    <h1>ORIGEN Y EVOLUCION DEL INTERNET</h1>
-
+    <h1>ORIGEN Y EVOLUCIÓN DEL INTERNET</h1>
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <a href="index.html" class="active">Inicio</a>
-            <a href="EstructuraYComponentes.html">Estructura Y Componentes</a>
-            <a href="ServiciosYAplicaciones.html">Servicios Y Aplicaciones</a>
+            <a href="EstructuraYComponentes.html">Estructura y Componentes</a>
+            <a href="ServiciosYAplicaciones.html">Servicios y Aplicaciones</a>
             <a href="Seguridad.html">Seguridad</a>
-            <a href="NuevasTecnologias.html">Nuevas Tecnologias Emergentes</a>
+            <a href="NuevasTecnologias.html">Nuevas Tecnologías Emergentes</a>
         </nav>
     </header>
-
     <main>
         <h2>Historia del Internet</h2>
-
         <p>El Internet tiene sus raíces en las telecomunicaciones, comenzando con el telégrafo
             a finales del siglo XIX y en el desarrollo de las primeras computadoras durante la
             Segunda Guerra Mundial, creadas principalmente con fines bélicos. A mediados del
             siglo XX surgieron las primeras ideas sobre redes de comunicación, dando origen a
             conceptos de redes computarizadas.</p>
-
         <p>En 1962, Joseph Carl Robnett Licklider, del MIT, propuso la idea de una “Red Galáctica”,
             un sistema que permitiría la interconexión social a través de computadoras. En las
             décadas de 1950 y 1960 ya existían redes modestas para reservas aéreas y control militar.
             La incorporación de tecnología de semiconductores permitió que las grandes computadoras
             pudieran atender a varios usuarios simultáneamente, lo que llevó a la creación de
             conceptos como computadores “huéspedes” y servidores.</p>
-
-        <img src="img/Joseph Licklider.jpg"
-            style="width: 50%; max-width: 500px; height: auto; display: block; margin: 1em auto;">
-
+        <img src="img/Joseph Licklider.jpg" 
+             alt="Retrato de Joseph Carl Robnett Licklider, pionero de la Red Galáctica"
+             loading="lazy"
+             style="width: 50%; max-width: 500px; height: auto; display: block; margin: 1em auto;">
         <p>En 1969 nació ARPANET, un proyecto del Departamento de Defensa de EE.UU., que conectaba
             universidades y fue dirigido por Licklider. Para que distintas computadoras se comunicaran,
             se desarrollaron protocolos comunes. En 1973, ARPANET comenzó a intercambiar información
             con otras redes internacionales, y en 1982 se establecieron los protocolos TCP/IP, base
             fundamental para la comunicación en Internet.</p>
-
-        <img src="img/ARPANET.png" style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
-
+        <img src="img/ARPANET.png"
+             alt="Diagrama de la red ARPANET, la precursora del Internet"
+             loading="lazy"
+             style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
         <p>Durante los años 80, Internet creció y se abrió lentamente al mundo comercial. ARPANET
             evolucionó hasta su cierre a comienzos de los 90, cuando fue reemplazada por NSFNET,
             una red de científicos y universidades que sentó las bases del Internet actual, con más
             de 100,000 servidores en 1990.</p>
-
         <p>El término “Internet” se popularizó en los 90, como acrónimo de redes interconectadas.
             La World Wide Web fue creada por Tim Berners-Lee y Robert Cailliau en el CERN, para
             facilitar el acceso y recuperación de la enorme cantidad de información en Internet
             mediante documentos enlazados y navegadores web, como Mosaic en 1993, que hicieron
             posible la difusión masiva del uso de Internet.</p>
-
         <h2>Etapas del desarrollo de Internet</h2>
-
         <ol>
             <li><strong>Los inicios (1940-1989):</strong><br>
                 <p>Internet surge como una red militar y científica para garantizar comunicaciones sin
                 un centro de control único, usando líneas telefónicas y desarrollando protocolos como
                 TCP/IP. El software de código abierto fomentó la colaboración.</p>
                 <img src="img/InicioInternet.jpg"
-                    style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
+                     alt="Imagen representativa de los inicios de Internet"
+                     loading="lazy"
+                     style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
             </li>
-
             <li><strong>La expansión (1990-1999):</strong><br>
                 <p>El acceso masivo se facilita con la entrada de empresas privadas, el crecimiento de
                 sitios web y el inicio de la Web 2.0. Aparecen blogs y se generan grandes cantidades
                 de datos, naciendo el concepto de <em>big data</em>, con sus desafíos en sesgos y poder.</p>
                 <img src="img/ExpansionDelInternet.jfif"
-                    style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
+                     alt="Evolución del Internet durante la década de los 90"
+                     loading="lazy"
+                     style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
             </li>
-
             <li><strong>Red colaborativa e interactiva (2000-2009):</strong><br>
                 <p>La Web 2.0 permite que usuarios sin conocimientos técnicos generen y compartan contenido
                 en plataformas como Wikipedia, Facebook y YouTube. Se popularizan los servicios en la
                 nube y la banda ancha, junto con dispositivos móviles que amplían el acceso.</p>
                 <img src="img/Web20.jpg"
-                    style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
+                     alt="La Web 2.0 y la colaboración en Internet"
+                     loading="lazy"
+                     style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
             </li>
-
             <li><strong>Monetización y derechos (2010-2019):</strong><br>
                 <p>Internet se convierte en un espacio dominado por plataformas comerciales. Surgen las
                 criptomonedas como Bitcoin, y el análisis de datos personales crece con fines publicitarios
@@ -106,77 +93,58 @@
                 del ciberespacio. Se reconoce el acceso a Internet como un derecho humano, y en Argentina
                 se impulsan programas para expandir la conectividad y la soberanía tecnológica.</p>
                 <img src="img/BitCoin.jpg"
-                    style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
+                     alt="Bitcoin y la monetización en Internet"
+                     loading="lazy"
+                     style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
             </li>
-
             <li><strong>IA generativa, pandemia y ambiente (2020-2024):</strong><br>
                 <p>La pandemia de Covid-19 acelera el trabajo y la vida social en línea. La inteligencia
                 artificial, especialmente la IA generativa, revoluciona la creación de contenido pero
                 también genera preocupaciones sobre ética, privacidad y consumo energético.</p>
                 <img src="img/IAGenerativa.webp"
-                    style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
+                     alt="IA generativa y su impacto reciente en Internet"
+                     loading="lazy"
+                     style="width: 50%; max-width: 300px; height: auto; display: block; margin: 1em auto;">
             </li>
         </ol>
     </main>
-
     <footer>
-        <button id="footer-menu-toggle" aria-label="Mostrar bibliografía">☰ Bibliografía</button>
-        <nav id="footer-menu" class="hidden">
+        <button id="footer-menu-toggle" aria-label="Mostrar bibliografía" aria-controls="footer-menu" aria-expanded="false">☰ Bibliografía</button>
+        <nav id="footer-menu" class="hidden" aria-label="Bibliografía">
             <ul>
-                <li><a href="https://continuemosestudiando.abc.gob.ar/contenido/origen-y-evolucion-de-internet/"
-                        target="_blank" rel="noopener noreferrer">Origen y evolución de Internet - Continuemos
-                        Estudiando</a></li>
-                <li><a href="https://concepto.de/historia-de-internet/" target="_blank"
-                        rel="noopener noreferrer">Historia de Internet - Concepto</a></li>
-                <li><a href="https://www.digitalrecovery.com.co/como-se-estructura-el-internet/" target="_blank"
-                        rel="noopener noreferrer">¿Cómo se estructura el Internet? - Digital Recovery</a></li>
-                <li><a href="https://www.tokioschool.com/noticias/componentes-de-redes/" target="_blank"
-                        rel="noopener noreferrer">Componentes de redes - Tokio School</a></li>
-                <li><a href="https://wol.jw.org/es/wol/d/r4/lp-s/101997522" target="_blank"
-                        rel="noopener noreferrer">Historia del Internet - JW.org</a></li>
-                <li><a href="https://www.kaspersky.es/resource-center/definitions/what-is-internet-security?srsltid=AfmBOoq4t10sDzdGeDWyljpJP9jja1IKGeUjc_PNYAzf_fEevjoYkkTC"
-                        target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - Kaspersky</a></li>
-                <li><a href="https://www.fortinet.com/lat/resources/cyberglossary/internet-security" target="_blank"
-                        rel="noopener noreferrer">Internet Security - Fortinet</a></li>
-                <li><a href="https://edu.gcfglobal.org/es/seguridad-en-internet/que-es-la-seguridad-en-internet/1/"
-                        target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - GCFLearnFree</a>
-                </li>
-                <li><a href="https://startupeable.com/glosario/tecnologias-emergentes/" target="_blank"
-                        rel="noopener noreferrer">Tecnologías emergentes - Startupeable</a></li>
-                <li><a href="https://www.iberdrola.com/innovacion/cuarta-revolucion-industrial" target="_blank"
-                        rel="noopener noreferrer">Cuarta revolución industrial - Iberdrola</a></li>
-                <li><a href="https://www.prosa.com.mx/blockchain/blockchain-e-internet-de-las-cosas-la-revolucion-tecnologica"
-                        target="_blank" rel="noopener noreferrer">Blockchain e Internet de las cosas - Prosa</a></li>
-                <li><a href="https://ppstech.mx/blog/las-tecnologias-emergentes-que-estan-transformando-nuestro-mundo-digital/"
-                        target="_blank" rel="noopener noreferrer">Las tecnologías emergentes que están transformando
-                        nuestro mundo digital - PPS Tech</a></li>
+                <li><a href="https://continuemosestudiando.abc.gob.ar/contenido/origen-y-evolucion-de-internet/" target="_blank" rel="noopener noreferrer">Origen y evolución de Internet - Continuemos Estudiando</a></li>
+                <li><a href="https://concepto.de/historia-de-internet/" target="_blank" rel="noopener noreferrer">Historia de Internet - Concepto</a></li>
+                <li><a href="https://www.digitalrecovery.com.co/como-se-estructura-el-internet/" target="_blank" rel="noopener noreferrer">¿Cómo se estructura el Internet? - Digital Recovery</a></li>
+                <li><a href="https://www.tokioschool.com/noticias/componentes-de-redes/" target="_blank" rel="noopener noreferrer">Componentes de redes - Tokio School</a></li>
+                <li><a href="https://wol.jw.org/es/wol/d/r4/lp-s/101997522" target="_blank" rel="noopener noreferrer">Historia del Internet - JW.org</a></li>
+                <li><a href="https://www.kaspersky.es/resource-center/definitions/what-is-internet-security?srsltid=AfmBOoq4t10sDzdGeDWyljpJP9jja1IKGeUjc_PNYAzf_fEevjoYkkTC" target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - Kaspersky</a></li>
+                <li><a href="https://www.fortinet.com/lat/resources/cyberglossary/internet-security" target="_blank" rel="noopener noreferrer">Internet Security - Fortinet</a></li>
+                <li><a href="https://edu.gcfglobal.org/es/seguridad-en-internet/que-es-la-seguridad-en-internet/1/" target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - GCFLearnFree</a></li>
+                <li><a href="https://startupeable.com/glosario/tecnologias-emergentes/" target="_blank" rel="noopener noreferrer">Tecnologías emergentes - Startupeable</a></li>
+                <li><a href="https://www.iberdrola.com/innovacion/cuarta-revolucion-industrial" target="_blank" rel="noopener noreferrer">Cuarta revolución industrial - Iberdrola</a></li>
+                <li><a href="https://www.prosa.com.mx/blockchain/blockchain-e-internet-de-las-cosas-la-revolucion-tecnologica" target="_blank" rel="noopener noreferrer">Blockchain e Internet de las cosas - Prosa</a></li>
+                <li><a href="https://ppstech.mx/blog/las-tecnologias-emergentes-que-estan-transformando-nuestro-mundo-digital/" target="_blank" rel="noopener noreferrer">Las tecnologías emergentes que están transformando nuestro mundo digital - PPS Tech</a></li>
             </ul>
         </nav>
-
         <div class="texto-3-partes">
             <span>Eugenio Israel García Abraján</span>
             <span>Grupo 402</span>
             <span>Ing. en Computación</span>
         </div>
     </footer>
-
+    <button onclick="scrollToTop()" id="btn-top" aria-label="Volver al inicio">↑ Volver al inicio</button>
     <script>
+        // Accesibilidad: actualiza aria-expanded para lectores de pantalla
         const footerToggleBtn = document.getElementById('footer-menu-toggle');
         const footerMenu = document.getElementById('footer-menu');
-
         footerToggleBtn.addEventListener('click', () => {
+            const expanded = footerToggleBtn.getAttribute('aria-expanded') === 'true' || false;
+            footerToggleBtn.setAttribute('aria-expanded', !expanded);
             footerMenu.classList.toggle('hidden');
         });
-    </script>
-
-    <button onclick="scrollToTop()" id="btn-top">↑ Volver al inicio</button>
-
-    <script>
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
-
 </body>
-
 </html>
