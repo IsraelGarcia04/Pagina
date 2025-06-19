@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUEVAS TECNOLOGÍAS</title>
+    <title>Nuevas Tecnologías Emergentes</title>
+    <!-- SEO: Descripción -->
+    <meta name="description" content="Explora las nuevas tecnologías emergentes como Industria 4.0, Inteligencia Artificial, Blockchain, IoT y Realidad Aumentada/Virtual y su impacto en la sociedad.">
+    <!-- Google Fonts optimizado -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" media="all">
+    <!-- CSS principal siempre carga inmediatamente -->
+    <link rel="stylesheet" href="estilos.css" media="all">
     <!-- CSS crítico en línea para mejor primer renderizado -->
     <style>
         body { font-family: 'Poppins', sans-serif; background: #f9f9f9; color: #222; margin: 0; }
@@ -42,25 +48,23 @@
             #btn-top { width: 40px; height: 40px; font-size: 1.1em; bottom: 14px; right: 14px; }
         }
     </style>
-    <link rel="stylesheet" href="estilos.css" media="print" onload="this.media='all'">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>ORIGEN Y EVOLUCIÓN DEL INTERNET</h1>
+    <h1>Nuevas Tecnologías Emergentes</h1>
 
     <header>
-        <nav>
+        <nav aria-label="Navegación principal">
             <a href="index.html">Inicio</a>
-            <a href="EstructuraYComponentes.html">Estructura Y Componentes</a>
-            <a href="ServiciosYAplicaciones.html">Servicios Y Aplicaciones</a>
+            <a href="EstructuraYComponentes.html">Estructura y Componentes</a>
+            <a href="ServiciosYAplicaciones.html">Servicios y Aplicaciones</a>
             <a href="Seguridad.html">Seguridad</a>
-            <a href="NuevasTecnologias.html" class="active">Nuevas Tecnologías Emergentes</a>
+            <a href="NuevasTecnologias.html" class="active" aria-current="page">Nuevas Tecnologías Emergentes</a>
         </nav>
     </header>
 
-    <nav id="menu-secciones">
+    <nav id="menu-secciones" aria-label="Menú de Secciones">
         <h2>Menú de Secciones</h2>
         <ul>
             <li><a href="#cuarta-ri">La Cuarta Revolución Industrial</a></li>
@@ -86,8 +90,8 @@
 
     <section id="cuarta-ri">
         <h2>La Cuarta Revolución Industrial (Industria 4.0)</h2>
-        <p class="flex-container">
-            <img src="img/Industria40.jpg" alt="Industria 4.0" class="imagen-derecha" />
+        <div class="flex-container">
+            <img src="img/Industria40.jpg" alt="Industria 4.0" class="imagen-derecha" width="300" height="200" loading="lazy" />
             <span>
                 La Industria 4.0, acuñada por Klaus Schwab en 2016, describe la fusión de sistemas físicos, digitales
                 y biológicos para crear fábricas inteligentes y conectadas globalmente. No se trata únicamente de robots
@@ -99,13 +103,13 @@
                 Al mismo tiempo, plantea desafíos como la brecha digital, riesgos de ciberseguridad, automatización del
                 empleo y la necesidad de adaptación profesional.
             </span>
-        </p>
+        </div>
     </section>
 
     <section id="inteligencia-artificial">
         <h2>Inteligencia Artificial (IA)</h2>
-        <p class="flex-container">
-            <img src="img/IA.webp" class="imagen-izquierda" alt="Inteligencia Artificial">
+        <div class="flex-container">
+            <img src="img/IA.webp" class="imagen-izquierda" alt="Inteligencia Artificial" width="300" height="200" loading="lazy">
             <span>
                 La Inteligencia Artificial es una pieza clave en la automatización y optimización industrial. Integrada
                 con Big Data y Machine Learning, permite que los sistemas aprendan, analicen y tomen decisiones sin
@@ -115,14 +119,13 @@
                 errores,
                 además de trabajar junto a operarios humanos con seguridad y adaptabilidad.
             </span>
-        </p>
+        </div>
     </section>
 
     <section id="blockchain">
         <h2>Blockchain</h2>
-        <p class="flex-container">
-            <img src="img/BlockChain.webp" class="imagen-derecha" alt="Blockchain">
-
+        <div class="flex-container">
+            <img src="img/BlockChain.webp" class="imagen-derecha" alt="Blockchain" width="300" height="200" loading="lazy">
             <span>
                 El blockchain es una base de datos distribuida e inmutable que permite registrar transacciones de forma
                 segura. Aunque es famoso por las criptomonedas, su aplicación va más allá: en la industria proporciona
@@ -133,13 +136,13 @@
                 e Industrial IoT (IIoT), configura el concepto de Blockchain of Things, fortaleciendo la integridad y
                 seguridad de datos entre dispositivos conectados.
             </span>
-        </p>
+        </div>
     </section>
 
     <section id="iot">
         <h2>Internet de las Cosas (IoT)</h2>
-        <p class="flex-container">
-            <img src="img/Iot.jpg" class="imagen-izquierda" alt="Internet de las Cosas">
+        <div class="flex-container">
+            <img src="img/Iot.jpg" class="imagen-izquierda" alt="Internet de las Cosas" width="300" height="200" loading="lazy">
             <span>
                 El Internet de las Cosas interconecta sensores y dispositivos —desde electrodomésticos hasta maquinaria
                 industrial— para recolectar datos y automatizar acciones. En su vertiente industrial (IIoT), se conecta
@@ -148,13 +151,13 @@
                 y seguridad de trabajadores. Los desafíos incluyen la privacidad, interoperabilidad, escalabilidad y
                 seguridad, donde el Blockchain y la IA juegan un papel clave para fortalecer la confianza.
             </span>
-        </p>
+        </div>
     </section>
 
     <section id="rv-ra">
         <h2>Realidad Virtual (RV) y Realidad Aumentada (RA)</h2>
-        <p class="flex-container">
-            <img src="img/Realidad Aumentada.webp" class="imagen-derecha" alt="Realidad Aumentada y Virtual">
+        <div class="flex-container">
+            <img src="img/Realidad Aumentada.webp" class="imagen-derecha" alt="Realidad Aumentada y Virtual" width="300" height="200" loading="lazy">
             <span>
                 RV y RA superponen información digital al mundo real o crean entornos virtuales inmersivos. En la
                 Industria
@@ -163,7 +166,7 @@
                 con gemelos digitales y sensores IoT, permiten anticipar fallos, reducir errores, mejorar la seguridad y
                 optimizar procesos sin interrumpir operaciones reales.
             </span>
-        </p>
+        </div>
     </section>
 
     <section>
@@ -181,12 +184,11 @@
     </section>
 
     <footer>
-        <button id="footer-menu-toggle" aria-label="Mostrar bibliografía">☰ Bibliografía</button>
-        <nav id="footer-menu" class="hidden">
+        <button id="footer-menu-toggle" aria-label="Mostrar bibliografía" aria-controls="footer-menu" aria-expanded="false">☰ Bibliografía</button>
+        <nav id="footer-menu" class="hidden" aria-label="Bibliografía">
             <ul>
                 <li><a href="https://continuemosestudiando.abc.gob.ar/contenido/origen-y-evolucion-de-internet/"
-                        target="_blank" rel="noopener noreferrer">Origen y evolución de Internet - Continuemos
-                        Estudiando</a></li>
+                        target="_blank" rel="noopener noreferrer">Origen y evolución de Internet - Continuemos Estudiando</a></li>
                 <li><a href="https://concepto.de/historia-de-internet/" target="_blank"
                         rel="noopener noreferrer">Historia de Internet - Concepto</a></li>
                 <li><a href="https://www.digitalrecovery.com.co/como-se-estructura-el-internet/" target="_blank"
@@ -200,8 +202,7 @@
                 <li><a href="https://www.fortinet.com/lat/resources/cyberglossary/internet-security" target="_blank"
                         rel="noopener noreferrer">Internet Security - Fortinet</a></li>
                 <li><a href="https://edu.gcfglobal.org/es/seguridad-en-internet/que-es-la-seguridad-en-internet/1/"
-                        target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - GCFLearnFree</a>
-                </li>
+                        target="_blank" rel="noopener noreferrer">¿Qué es la seguridad en Internet? - GCFLearnFree</a></li>
                 <li><a href="https://startupeable.com/glosario/tecnologias-emergentes/" target="_blank"
                         rel="noopener noreferrer">Tecnologías emergentes - Startupeable</a></li>
                 <li><a href="https://www.iberdrola.com/innovacion/cuarta-revolucion-industrial" target="_blank"
@@ -209,8 +210,7 @@
                 <li><a href="https://www.prosa.com.mx/blockchain/blockchain-e-internet-de-las-cosas-la-revolucion-tecnologica"
                         target="_blank" rel="noopener noreferrer">Blockchain e Internet de las cosas - Prosa</a></li>
                 <li><a href="https://ppstech.mx/blog/las-tecnologias-emergentes-que-estan-transformando-nuestro-mundo-digital/"
-                        target="_blank" rel="noopener noreferrer">Las tecnologías emergentes que están transformando
-                        nuestro mundo digital - PPS Tech</a></li>
+                        target="_blank" rel="noopener noreferrer">Las tecnologías emergentes que están transformando nuestro mundo digital - PPS Tech</a></li>
             </ul>
         </nav>
 
@@ -221,15 +221,16 @@
         </div>
     </footer>
 
+    <button onclick="scrollToTop()" id="btn-top" aria-label="Volver al inicio">↑ Volver al inicio</button>
     <script>
+        // Accesibilidad: actualiza aria-expanded para lectores de pantalla
         const footerToggleBtn = document.getElementById('footer-menu-toggle');
         const footerMenu = document.getElementById('footer-menu');
         footerToggleBtn.addEventListener('click', () => {
+            const expanded = footerToggleBtn.getAttribute('aria-expanded') === 'true' || false;
+            footerToggleBtn.setAttribute('aria-expanded', !expanded);
             footerMenu.classList.toggle('hidden');
         });
-    </script>
-    <button onclick="scrollToTop()" id="btn-top">↑ Volver al inicio</button>
-    <script>
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
